@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: fs-admin
+    versions:
+    - 0.18.0
+  - dependency-name: chart.js
+    versions:
+    - 3.1.0
+  - dependency-name: focus-trap
+    versions:
+    - 6.3.0
